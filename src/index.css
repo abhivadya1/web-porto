@@ -6,10 +6,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height, 94px) + 24px);
 }
 
 body {
   font-family:
+    "Plus Jakarta Sans",
     Inter,
     system-ui,
     -apple-system,
@@ -17,6 +19,10 @@ body {
     "Segoe UI",
     sans-serif;
   background: #0f172a;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
