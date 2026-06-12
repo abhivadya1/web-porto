@@ -401,7 +401,7 @@ function App() {
 
         <section id="experience" className="section">
           <div className="section-heading">
-            <h2>Work Experience</h2>
+            <h2>Experience</h2>
           </div>
 
           <div className="experience-list">
