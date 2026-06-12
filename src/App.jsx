@@ -178,7 +178,7 @@ function App() {
   useEffect(() => {
     const updateNavigationHeight = () => {
       const navbar = document.querySelector(".navbar");
-      const navHeight = navbar?.getBoundingClientRect().height ?? 94;
+      const navHeight = navbar?.getBoundingClientRect().height ?? 86;
       document.documentElement.style.setProperty("--nav-height", `${navHeight}px`);
     };
 
@@ -186,7 +186,7 @@ function App() {
       const navHeight =
         Number.parseFloat(
           getComputedStyle(document.documentElement).getPropertyValue("--nav-height")
-        ) || 94;
+        ) || 86;
       const scrollPosition = window.scrollY + navHeight + 80;
       const currentSection = NAV_ITEMS.reduce((current, item) => {
         const section = document.getElementById(item.id);
